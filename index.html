@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Assignment</title>
+</head>
+<body>
+    <h1>Welcome to Week 2 Assignment</h1>
+    <p>This my HTML file.</p>
+
+    <h2>Ordered list</h2>
+    <ol>
+        <li>Dubai</li>
+        <li>London</li>
+        <li>Madrid</li>
+    </ol>
+
+    <h2>Unordered list</h2>
+    <ul>
+        <li>Narok</li>
+        <li>Kiambu</li>
+        <li>Kitui</li>
+    </ul>
+
+    <h2>Definition list</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JavaScript</dt>
+        <dd>A programming language for web development</dd>
+    </dl>
+
+    <h2>Nested list</h2>
+    <ul>
+        <li>Birds
+            <ul>
+                <li>Owl</li>
+                <li>Flamingo</li>
+                <li>Hawk</li>
+            </ul>
+        </li>
+        <li>Universities
+            <ul>
+                <li>KU</li>
+                <li>JKUAT</li>
+                <li>MKU</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Image</h2>
+    <img src="C:\Users\PC\Documents\SERERIA.jpg" alt="This is an image of wheat" width="300" height="200">
+
+    <h2>Table</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>30</td>
+                <td>Nairobi</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+                <td>Mombasa</td>
+            </tr>
+            <tr>
+                <td>Joy</td>
+                <td>35</td>
+                <td>Kisumu</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Embedding videos & Audios</h2>
+    <video width="500" height="240" controls>
+        <source src="C:\Users\PC\Documents\webvideo.mp4" type=video/mp4>
+        Your browser does not support the video tag.
+    </video>
+    <br><br>
+    <audio controls>
+        <source src="C:\Users\PC\Documents\music.mp3" type="audio/mpeg"> 
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Forms</h2>
+    <form action="Location" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter name here..." required minlength="2" autocomplete="name"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email here..." required autocomplete="email"><br><br>
+
+            <label for="Age">Age:</label>
+            <input type="number" name="Age" id="Age" placeholder="Enter your Age here..." required min="1" max="120"><br><br>
+
+            <label for="dob">Date of birth:</label>
+            <input type="date" name="dob" id="dob" required><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="Male" id="male" required><label for="male">Male</label>
+            <input type="radio" name="gender" value="Female" id="female"><label for="female">Female</label><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Details</legend>
+
+            <label for="Cv">Upload CV:</label>
+            <input type="file" name="Cv" id="Cv" accept=".pdf,.doc,.docx" required><br><br>
+
+            <label for="bio">Bio:</label>
+            <textarea name="bio" id="bio" cols="40" rows="15" placeholder="Write your Bio here..." minlength="20" required></textarea><br><br>
+
+            <label for="readonlyField">Membership ID:</label>
+            <input type="text" id="readonlyField" value="KBC35791" readonly><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
